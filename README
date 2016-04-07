@@ -1,0 +1,35 @@
+--> run_ocr.m - run this script on your octave terminal to identify the handwritten digits between 0-9
+
+
+** Input :
+	There are 5000 training examples in "ex3data1.mat", where each training example is a
+	20 pixel by 20 pixel grayscale image of the digit. Each pixel is represented by
+	a floating point number indicating the grayscale intensity at that location.
+	The 20 by 20 grid of pixels is “unrolled” into a 400-dimensional vector. Each
+	of these training examples becomes a single row in our data matrix X. This
+	gives us a 5000 by 400 matrix X where every row is a training example for a
+	handwritten digit image.
+
+** Output :
+	Output is a matrix named "pred". 
+	->Check the variables by typing command "WHOS" on the octave/matlab terminal.
+	->"pred" will be a 5000x1 matrix where each row will denote the digit recognized for each training example.
+
+###NOTE :- output "10" denotes 0
+
+
+run_ocr.m	- Octave/MATLAB script that steps you through the exercise
+ex4data1.mat	- Training set of hand-written digits
+ex4weights.mat	- Neural network parameters for exercise 4
+submit.m	- Submission script that sends your solutions to our servers
+displayData.m	- Function to help visualize the dataset
+fmincg.m	- Function minimization routine (similar to fminunc)
+sigmoid.m	- Sigmoid function
+computeNumericalGradient.m	- Numerically compute gradients
+checkNNGradients.m		- Function to help check your gradients
+debugInitializeWeights.m	- Function for initializing weights
+predict.m			- Neural network prediction function
+
+sigmoidGradient.m	- Compute the gradient of the sigmoid function
+randInitializeWeights.m	- Randomly initialize weights
+nnCostFunction.m	- Neural network cost function
